@@ -1,7 +1,6 @@
-# Impulse su fuerza de ventas con Sky Commercial Management![image](https://user-images.githubusercontent.com/70195218/218418107-c6b4bc47-32cd-42ed-be96-75fb17505de5.png)
+# Impulse su fuerza de ventas con Sky Commercial Management!
 
-SkyCM potencializa su fuerza de ventas permitiendo planear, organizar y gestionar sus visitas a clientes, brindando un conjunto de funciones que optimizan el seguimiento de la labor. SkyCM esta construído sobre la base RISE y el soporte ofrecido por BTP.![image](https://user-images.githubusercontent.com/70195218/218418149-88b9239a-3b8b-4e5b-b21f-fc01d2bada46.png)
-
+SkyCM potencializa su fuerza de ventas permitiendo planear, organizar y gestionar sus visitas a clientes, brindando un conjunto de funciones que optimizan el seguimiento de la labor. SkyCM esta construído sobre la base RISE y el soporte ofrecido por BTP.
 SkyCM ofrece como solución:
 
 Capacidad mobile/web
