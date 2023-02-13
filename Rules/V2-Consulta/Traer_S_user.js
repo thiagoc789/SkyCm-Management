@@ -22,6 +22,7 @@ export default function Traer_S_user(context) {
 			dialog.alert(appClientData.UserId)
 			pageProxy.redraw();
 			appClientData.nombre = prod.VORNA;
+			//CAMBIO
 
 
 
