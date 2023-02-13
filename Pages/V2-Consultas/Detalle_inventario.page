@@ -1,0 +1,106 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "{Userdet5}",
+							"_Type": "Control.Type.FormCell.Title",
+							"_Name": "FC_viene",
+							"IsEditable": false,
+							"IsVisible": false,
+							"validationProperties": {
+								"SeparatorIsHidden": true
+							},
+							"Enabled": true
+						},
+						{
+							"Value": "{Color}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Styles": {
+								"Value": "SimplePropertyCellValue"
+							},
+							"Caption": "Color:",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Default",
+							"Enabled": true
+						},
+						{
+							"Value": "$(N,{CantDisponible})",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Styles": {
+								"Value": "SimplePropertyCellValue"
+							},
+							"Caption": "Cant  disponible:",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "{Userdet4}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Precio",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Precio",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "$(N,{Userdet1})",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_librePrima",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Styles": {
+								"Value": "SimplePropertyCellValue"
+							},
+							"Caption": "Libre Utilizacion : ",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "$(N,{Userdet2})",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_transPrima",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Styles": {
+								"Value": "SimplePropertyCellValue"
+							},
+							"Caption": "Transito :",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "$(N,{Userdet1})",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_transitoMex",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Styles": {
+								"Value": "SimplePropertyCellValue"
+							},
+							"Caption": "Transito :",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Detalle_inventario",
+	"Caption": "{Referencia}",
+	"OnLoaded": "/SkyCM_V2/Rules/V2-Consulta/InventarioCampos.js"
+}

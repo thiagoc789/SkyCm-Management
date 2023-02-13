@@ -1,0 +1,69 @@
+{
+	"Controls": [
+		{
+			
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"EntitySet": "HISTV",
+						"QueryOptions": "$filter=ESTADO eq 'ACTIVO' and PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+						"ReadLink": "",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay visitas en curso",
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "/SkyCM_V2/Images/visitar_cliente.png",
+						"Headline": "{NAME1}",
+						"Subheadline": "{ESTADO}",
+						"Description": "description",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleVisitaActivaAction.action",
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": ""
+							}
+						]
+					}
+				},
+				{
+					"Target": "",
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Target": "",
+							"_Name": "SectionButton0",
+							"Title": "Visitar cliente",
+							"Alignment": "Center",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToMisClientespage.action",
+							"ButtonType": "Text",
+							"Semantic": "Tint"
+						}
+					]
+				}
+			]
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "VisitaAClientePage",
+	"Caption": "Visita a cliente",
+	"PrefersLargeCaption": true
+}

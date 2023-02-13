@@ -1,0 +1,121 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton1",
+							"Title": "Reinicializar",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://undo",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/SkyCM_V2/Actions/Service/InitializeOffline2.0.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Reinicializar"
+								}
+							}
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Actualizar aplicacion",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://feed",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/SkyCM_V2/Actions/Service/ActualizarStartedMessage.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Actualizar aplicacion"
+								}
+							}
+						},
+						{
+							"_Name": "SectionButton0",
+							"Title": "Validar informacion por sincronizar",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://upload-to-cloud",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/SkyCM_V2/Rules/Mexico/ValidarCambiosPendientes.js",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Validar informacion por sincronizar"
+								}
+							}
+						},
+						{
+							"_Name": "SectionButton3",
+							"Title": "Sincronizar aplicacion",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://synchronize",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/SkyCM_V2/Actions/Message/MsjAdvertenciaSincronizar.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Sincronizar aplicacion"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Soporte",
+	"Caption": "Soporte",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://upload-to-cloud",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Service/UploadOnly.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

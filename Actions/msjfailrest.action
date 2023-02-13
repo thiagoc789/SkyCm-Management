@@ -1,0 +1,4 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "FALLO REST {{#ActionResults:ResultRest/#Property:error}}"
+}

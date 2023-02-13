@@ -1,0 +1,17 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "Download_vendor"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/ClosePage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Refrescando informacion del usuario...",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

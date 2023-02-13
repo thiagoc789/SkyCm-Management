@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/SkyCM_V2/Pages/V2-Consultas/Detalle_inventario.page",
+	"ActionResult": {
+		"_Name": "Nav_detalleInv"
+	}
+}

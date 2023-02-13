@@ -1,0 +1,6 @@
+{
+	"DestinationName": "Dest_SkyCM_Productivo",
+	"LanguageURLParam": "sap-language",
+	"OfflineEnabled": true,
+	"SourceType": "Mobile"
+}

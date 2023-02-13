@@ -1,0 +1,27 @@
+{
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.skycm.productivo&ClientId=365bf70e-aa37-48a0-83c9-8cd4cf93b15e&ServerUrl=https://sdme-sndev-com-skycm-productivo.cfapps.us10.hana.ondemand.com&SapCloudPlatformEndpoint=https://sdme-sndev-com-skycm-productivo.cfapps.us10.hana.ondemand.com&AuthorizationEndpointUrl=https://sdme-sndev-com-skycm-productivo.cfapps.us10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://sdme-sndev-com-skycm-productivo.cfapps.us10.hana.ondemand.com&TokenUrl=https://sdme-sndev-com-skycm-productivo.cfapps.us10.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10.hana.ondemand.com",
+		"Organization": "cd6f0928-cfbb-4e57-8904-90ca6fa24f8a",
+		"Space": "3ba2680e-8758-4368-b76a-0b6c078d9494"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/cd6f0928-cfbb-4e57-8904-90ca6fa24f8a/space/3ba2680e-8758-4368-b76a-0b6c078d9494",
+		"AppId": "com.skycm.productivo",
+		"Destination": [
+			"Dest_SkyCM_Productivo",
+			"Online_skycm",
+			"Rest_Inventario",
+			"Rest_Paises"
+		]
+	},
+	"Build": {
+		"SourceMap": true,
+		"WMF": false
+	}
+}

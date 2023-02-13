@@ -1,0 +1,67 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "#Page:Main/#ClientData/#Property:Inventario",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Cant disponible: $(N,{CantDisponible})",
+						"Subhead": "Color: {Color}",
+						"Footnote": "/SkyCM_V2/Rules/V2-Consulta/visibilidad_inventario.js",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://activity-items"
+								}
+							],
+							"ImageIsCircular": true
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							]
+						},
+						"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/Nav_detalleInv.action",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inven_Ord_DISPONIBLE",
+	"Caption": "#Page:Inventario2/#Control:FC_List_Referencia/#SelectedValue",
+	"PrefersLargeCaption": true
+}

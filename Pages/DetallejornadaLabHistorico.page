@@ -1,0 +1,117 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/SkyCM_V2/Actions/Message/ConfirmacionCheckOut.action",
+				"Position": "Right",
+				"Caption": "Check-Out",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Detalle Jornada",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{ID_JORNADA}",
+							"_Name": "FC_ID_Jornada",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora inicio:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "{HORA_INICIO}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora fin:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Name": "FC_HoraFin",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"MaxNumberOfLines": 40,
+							"PlaceHolder": "Digite observaciones de la jornada",
+							"Target": "",
+							"ValidationProperties": {
+								"SeparatorIsHidden": true
+							},
+							"_Name": "FC_Observaciones",
+							"_Type": "Control.Type.FormCell.Note"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Value":"",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FormCellTitle0",
+							"_Type": "Control.Type.FormCell.Title"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Caption": "        ⏰ Check-Out Fuera de Tiempo ⏰ ",
+					"Controls": [
+						{
+							"ButtonType": "Primary",
+							"IsVisible": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavTOJustificacionJornadaOut.action",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "🖌 Finalizar Jornada Out Time 🖌",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button",
+							"Semantic": "Tint"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleJornadaActiva",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

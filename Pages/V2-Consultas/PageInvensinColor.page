@@ -1,0 +1,107 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "#Page:Main/#ClientData/#Property:Inventario",
+					"_Name": "ObjecTableDesordenada",
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Color: {Color}",
+						"Subhead": "Cant disponible: {CantDisponible}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Tags": [
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://activity-items"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"AvatarGrid": {
+							"Avatars": [
+							]
+						},
+						"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/Nav_detalleInv.action",
+						"Selected": true
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": true,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"Target": "#Page:Main/#ClientData/#Property:Inventario",
+					"_Name": "SectionObjectCardCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"Card": {
+						"Visible": true,
+						"Title": "Color: {Color}",
+						"Subhead": "Cant disponible:  $(N,{CantDisponible})",
+						"Footnote": "{Userdet5}",
+						"DetailImage": "sap-icon://customer-order-entry",
+						"DetailImageIsCircular": true,
+						"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/Nav_detalleInv.action",
+						"OverflowButtons": [
+						],
+						"PrimaryAction": {
+							"Style": "",
+							"Title": "Primary",
+							"Visible": false
+						},
+						"SecondaryAction": {
+							"Style": "",
+							"Title": "Secondary",
+							"Visible": false
+						},
+						"_Type": "Control.Type.ObjectCard"
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PageInvenDesord",
+	"Caption": "#Page:Inventario2/#Control:FC_List_Referencia/#SelectedValue",
+	"PrefersLargeCaption": true
+}

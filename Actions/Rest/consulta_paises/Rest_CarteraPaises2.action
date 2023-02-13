@@ -1,0 +1,25 @@
+{
+	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "ResultRest"
+	},
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/Rule_Rest_Cartera.js",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/Rest_paises.service",
+		"Path": "/CarteraSkyVMovilPais",
+		"OutputPath": "/MT_CarteraSkyVMovilResp/T_CarteraSkyVMovilResp/0",
+		"RequestProperties": {
+			"Method": "PUT",
+			"Body": {
+				"T_CarteraSKyVMovil": [
+					{
+						"Cliente": "#Page:Estado_cartera/#Control:FC_List_ClientesCartera/#SelectedValue",
+						"Vendedor": "#Page:Estado_cartera/#Control:Fc_Pernr_Cartera/#Value",
+						"Userdefpr1": "#Page:Estado_cartera/#Control:FC_List_Vend_Cli_Cart/#SelectedValue",
+						"Userdefpr2": "#Page:Estado_cartera/#Control:FC_SOC/#Value"
+					}
+				]
+			}
+		}
+	}
+}

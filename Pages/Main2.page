@@ -1,0 +1,197 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "Gestione y administre sus visitas a clientes",
+						"Footnote": "2.0.3",
+						"DetailImage": "/SkyCM_V2/Images/Icono_SkyCM.png",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Text": "#Application/#ClientData/UserId"
+							}
+						],
+						"BodyText": "Sistemas para casos B2E",
+						"HeadlineText": "Commercial Management",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.ObjectCardCollection",
+					"_Name": "SectionObjectCardCollection1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Cards": [
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard0",
+							"Visible": true,
+							"Title": "Jornada Laboral",
+							"Subhead": "Registre el inicio de su jornada laboral",
+							"DetailImage": "/SkyCM_V2/Images/reloj.png",
+							"DetailImageIsCircular": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/IrAJornadaLaboral.action",
+							"OverflowButtons": [
+							],
+							"PrimaryAction": {
+								"Style": "",
+								"Title": "Primary",
+								"Visible": false
+							},
+							"SecondaryAction": {
+								"Style": "",
+								"Title": "Secondary",
+								"Visible": false
+							},
+							"Styles": {
+								"BackgroundColor": "ObjectCardBackground"
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard2",
+							"Visible": true,
+							"Title": "Visita a cliente",
+							"Subhead": "Cree una nueva visita a cliente",
+							"DetailImage": "/SkyCM_V2/Images/visitar_cliente.png",
+							"DetailImageIsCircular": true,
+							"OnPress": "/SkyCM_V2/Rules/ValidarJornadaLaboralActiva.js",
+							"OverflowButtons": [
+							],
+							"PrimaryAction": {
+								"Style": "",
+								"Title": "Primary",
+								"Visible": false
+							},
+							"SecondaryAction": {
+								"Style": "",
+								"Title": "Secondary",
+								"Visible": false
+							},
+							"Styles": {
+								"BackgroundColor": "ObjectCardBackground"
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard3",
+							"Visible": true,
+							"Title": "Consultas",
+							"Subhead": "Consulte, estado de pedido, inventario y cartera",
+							"DetailImage": "/SkyCM_V2/Images/HojaBuscar.png",
+							"DetailImageIsCircular": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToConsulta.action",
+							"OverflowButtons": [
+							],
+							"PrimaryAction": {
+								"Style": "",
+								"Title": "Primary",
+								"Visible": false
+							},
+							"SecondaryAction": {
+								"Style": "",
+								"Title": "Secondary",
+								"Visible": false
+							},
+							"Styles": {
+								"BackgroundColor": "ObjectCardBackground"
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard1",
+							"Visible": true,
+							"Title": "Gestion de visitas",
+							"Subhead": "Consulte informacion detallada de sus visitas",
+							"DetailImage": "/SkyCM_V2/Images/gestion_visitas.png",
+							"DetailImageIsCircular": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToGestionVisitas.action",
+							"OverflowButtons": [
+							],
+							"PrimaryAction": {
+								"Style": "",
+								"Title": "Primary",
+								"Visible": false
+							},
+							"SecondaryAction": {
+								"Style": "",
+								"Title": "Secondary",
+								"Visible": false
+							},
+							"Styles": {
+								"BackgroundColor": "ObjectCardBackground"
+							}
+						},
+						{
+							"_Type": "Control.Type.ObjectCard",
+							"_Name": "ObjectCard4",
+							"Visible": true,
+							"Title": "Cuenta",
+							"Subhead": "Configuracion de la cuenta",
+							"DetailImage": "/SkyCM_V2/Images/user_icon.png",
+							"DetailImageIsCircular": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToCuentaPage.action",
+							"OverflowButtons": [
+							],
+							"PrimaryAction": {
+								"Style": "",
+								"Title": "Primary",
+								"Visible": false
+							},
+							"SecondaryAction": {
+								"Style": "",
+								"Title": "Secondary",
+								"Visible": false
+							},
+							"Styles": {
+								"BackgroundColor": "ObjectCardBackground"
+							}
+						}
+					],
+					"Layout": {
+						"LayoutType": "Vertical"
+					}
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "fc_idtiempo",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main1",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/SkyCM_V2/Rules/actualizar_interval.js",
+	"OnResume": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/EjecutarMensaje.js",
+	"OnActivityBackPressed": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/EjecutarMensaje.js"
+}

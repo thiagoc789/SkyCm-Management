@@ -1,0 +1,136 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_List_ClientesCartera",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Cliente",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione un cliente",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/SkyCM_V2/Services/Online_initialize.service",
+									"EntitySet": "CLIENTEINFO",
+									"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/UserId}}'"
+								},
+								"DisplayValue": "{NAME1}",
+								"ReturnValue": "{KUNNR}"
+							}
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/TraerPernr2.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_Pernr_Cartera",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "pernr",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/RuleSociedad.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_SOC",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Sociedad",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_Pernr_Cartera2",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "2pernr",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_List_Vend_Cli_Cart",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Enviar a:",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								{
+									"ObjectCell": {
+										"DetailImageIsCircular": false,
+										"Icons": [],
+										"PreserveIconStackSpacing": true,
+										"Styles": {},
+										"Title": "Vendedor"
+									},
+									"ReturnValue": "1"
+								},
+								{
+									"ObjectCell": {
+										"DetailImageIsCircular": false,
+										"Icons": [],
+										"PreserveIconStackSpacing": true,
+										"Styles": {},
+										"Title": "Cliente y vendedor"
+									},
+									"ReturnValue": "3"
+								}
+							]
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Enviar estado de cuenta",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://feeder-arrow",
+							"ImagePosition": "Leading",
+							"OnPress": "/SkyCM_V2/Actions/Checks/V2-Consulta/CheckValidaCartera.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Estado_cartera",
+	"Caption": "Estado cartera"
+}

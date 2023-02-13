@@ -1,0 +1,137 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_List_Referencia",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Referencia",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione una Referencia",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"Search": {
+								"Enabled": true,
+								"BarcodeScanner": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/SkyCM_V2/Services/Online_initialize.service",
+									"EntitySet": "INVENTARIO",
+									"QueryOptions": "$filter=PERNR eq '{{#Page:Consultas/#Control:PERNR_CONSUL/#Value}}'&$orderby=MATNR&$select=MATNR"
+								},
+								"DisplayValue": "{MATNR}",
+								"ReturnValue": "{MATNR}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_color",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Color",
+							"PlaceHolder": "all",
+							"KeyboardType": "Default",
+							"AlternateInput": "None",
+							"Enabled": true
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/RuleSociedad.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_SOC",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Sociedad",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Pernr_Inv",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Pernr",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						},
+						{
+							"Value": [
+								"Predeterminado"
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "listpicker_Orden",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Ordenar por:",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"Color",
+								"Disponibilidad",
+								"Predeterminado"
+							]
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Buscar",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://display",
+							"ImagePosition": "Leading",
+							"OnPress": "/SkyCM_V2/Actions/Checks/V2-Consulta/CheckValidaInventario.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Scan QR",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Secondary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://bar-code",
+							"ImagePosition": "Leading",
+							"OnPress": "/SkyCM_V2/Actions/Service/Action_Scann_QR.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inventario2",
+	"Caption": "Inventario"
+}

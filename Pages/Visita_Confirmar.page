@@ -1,0 +1,17 @@
+{
+	"_Type": "Page",
+	"_Name": "Visita_Confirmar",
+	"Controls": [
+		{
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer",
+			"Sections": [
+				{
+					"Controls": [
+					]
+				}
+			]
+		}
+	],
+	"Caption": "Visita_Confirmar"
+}

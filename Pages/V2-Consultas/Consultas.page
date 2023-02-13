@@ -1,0 +1,154 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "/SkyCM_V2/Images/consultas.png",
+					"Height": 80,
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell0",
+								"Title": "Estado de pedido",
+								"Visible": true,
+								"Selected": false,
+								"Subhead": "Consulte el estado de pedido",
+								"DisplayDescriptionInMobile": true,
+								"DetailImage": "sap-icon://sales-order",
+								"DetailImageIsCircular": true,
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToEstadoPedido.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer",
+											"ImageText": ""
+										}
+									],
+									"ImageIsCircular": true,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell1",
+								"Title": "Inventario",
+								"Visible": true,
+								"Selected": false,
+								"Subhead": "Consulte el inventario",
+								"DisplayDescriptionInMobile": true,
+								"DetailImage": "sap-icon://inventory",
+								"DetailImageIsCircular": true,
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToInventario.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer",
+											"ImageText": ""
+										}
+									],
+									"ImageIsCircular": true,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell2",
+								"Title": "Estado de cartera",
+								"Visible": true,
+								"Selected": false,
+								"Subhead": "Consulte el estado de cartera",
+								"DisplayDescriptionInMobile": true,
+								"DetailImage": "sap-icon://batch-payments",
+								"DetailImageIsCircular": true,
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToEstadoCartera.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "sap-icon://customer",
+											"ImageText": ""
+										}
+									],
+									"ImageIsCircular": true,
+									"ImageHasBorder": false
+								},
+								"AvatarGrid": {
+									"ImageIsCircular": true
+								}
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Controls": [
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "PERNR_CONSUL",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando información..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Consultas",
+	"Caption": "Consultas",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/SkyCM_V2/Rules/V2-Consulta/TraerPernr2.js"
+}

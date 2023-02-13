@@ -1,0 +1,40 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/Message/MsjSincronizacionExitosa.action",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "CLIENTEINFO",
+			"Query": "CLIENTEINFO ",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "HISTV",
+			"Query": "HISTV",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "WORKDAY",
+			"Query": "WORKDAY",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "INVENTARIO",
+			"Query": "INVENTARIO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "CLIENTE_PROS",
+			"Query": "CLIENTE_PROS",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

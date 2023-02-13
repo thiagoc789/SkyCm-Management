@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "Nav_MENU"
+	},
+	"PageToOpen": "/SkyCM_V2/Pages/Main.page",
+	"ClearHistory": true,
+	"NavigationType": "Cross"
+}
