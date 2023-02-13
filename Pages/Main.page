@@ -16,7 +16,7 @@
 								"Text": "#Application/#AppData/#Property:UserId"
 							},
 							{
-								"Text": "#Application/#ClientData/nombre"
+								"Text": "#Application/#ClientData/#Property:nombre"
 							}
 						],
 						"BodyText": "Sistema para casos B2E",
