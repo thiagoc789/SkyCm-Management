@@ -8,15 +8,13 @@
 					"ObjectHeader": {
 						"Subhead": "Gestione y administre sus visitas a clientes",
 						"Footnote": "2.0.3",
+						"StatusText": "#Application/#AppData/#Property:nombre",
 						"Tags": [
 							{
 								"Text": "#Application/#ClientData/#Property:UserId"
 							},
 							{
 								"Text": "#Application/#AppData/#Property:UserId"
-							},
-							{
-								"Text": "#Application/#ClientData/#Property:nombre"
 							}
 						],
 						"BodyText": "Sistema para casos B2E",

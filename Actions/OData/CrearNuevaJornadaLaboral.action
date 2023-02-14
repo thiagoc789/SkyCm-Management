@@ -10,7 +10,7 @@
 	},
 	"Properties": {
 		"ID_JORNADA": "#Page:JornadaLabConfirmar/#Control:FC_IDJornadaLaboral/#Value",
-		"PERNR": "#Page:JornadaLabConfirmar/#Control:FC_PERNRVisita/#Value",
+		"PERNR": "ND",
 		"PERNR_SCP": "#Page:JornadaLabConfirmar/#Control:FC_PERNRSCPVisita/#Value",
 		"FECHA": "#Page:JornadaLabConfirmar/#Control:FC_FechaVisita/#Value",
 		"HORA_INICIO": "#Page:JornadaLabConfirmar/#Control:FC_HoraInicio/#Value",
