@@ -22,7 +22,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FC_PERNRVisita",
 							"IsEditable": true,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Código vendedor ARREGLAR:"
 						},
 						{
@@ -31,7 +31,7 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FC_PERNRSCPVisita",
 							"IsEditable": false,
-							"IsVisible": true,
+							"IsVisible": false,
 							"Caption": "Código SCP:"
 						}
 					],

@@ -8,7 +8,7 @@
 	},
 	"Properties": {
 		"ID_JORNADA": "#Page:-Previous/#Control:FC_IDJornadaLaboral/#Value",
-		"PERNR": "#Page:-Previous/#Control:FC_PERNRVisita/#Value",
+		"PERNR": "ND",
 		"PERNR_SCP": "#Page:-Previous/#Control:FC_PERNRSCPVisita/#Value",
 		"FECHA": "#Page:-Previous/#Control:FC_FechaVisita/#Value",
 		"HORA_INICIO": "#Page:-Previous/#Control:FC_HoraInicio/#Value",

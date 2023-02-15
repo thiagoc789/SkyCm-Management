@@ -8,19 +8,20 @@
 					"ObjectHeader": {
 						"Subhead": "Gestione y administre sus visitas a clientes",
 						"Footnote": "2.0.3",
-						"StatusText": "#Application/#AppData/#Property:nombre",
 						"Tags": [
 							{
-								"Text": "#Application/#ClientData/#Property:UserId"
+								"Color": "Grey",
+								"Text": "#Application/#ClientData/#Property:nombre"
 							},
 							{
-								"Text": "#Application/#AppData/#Property:UserId"
+								"Color": "Grey",
+								"Text": "#Application/#ClientData/#Property:UserId"
 							}
 						],
 						"BodyText": "Sistema para casos B2E",
 						"HeadlineText": "Commercial Management",
-						"StatusPosition": "Stacked",
-						"StatusImagePosition": "Leading",
+						"StatusPosition": "Crosswise",
+						"StatusImagePosition": "Trailing",
 						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",

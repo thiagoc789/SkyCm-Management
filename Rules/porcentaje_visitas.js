@@ -3,7 +3,7 @@
  * @param {IClientAPI} clientAPI
  */
 export default function porcentaje_visitas(clientAPI) {
-
+    var dialog = clientAPI.nativescript.uiDialogsModule;
     var hoy = new Date();
     var mes = ("0" + (hoy.getMonth() + 1)).slice(-2);
     var anio = hoy.getFullYear();

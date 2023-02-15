@@ -19,7 +19,7 @@ export default function Traer_S_user(context) {
 			var per = prod.PERNR_SCP;
 
 			appClientData.UserId = per;
-			dialog.alert(appClientData.UserId)
+			//dialog.alert(appClientData.UserId)
 			
 			appClientData.nombre = prod.VORNA;
 			
@@ -30,7 +30,7 @@ export default function Traer_S_user(context) {
 			return per;
 
 		} else {
-			dialog.alert('PERNR CAMBIó')
+			//dialog.alert('PERNR CAMBIó')
 			return 0;
 		}
 	});
